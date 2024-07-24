@@ -1,0 +1,442 @@
+@font-face{
+    font-family:"robotto";
+    src:url("fonts/Roboto-Slab.ttf");
+}
+/* =*=*=*=*=*=* Импорт текста из Google Fonts  =*=*=*=*=*=* */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gasoek+One&display=swap');
+
+
+body{
+    margin:80px 0;
+    padding:0;
+    background-color: #212121;
+}
+.content{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width:400px;
+    border-radius:25px 25px 0px 0px;
+    border:2px dashed black; 
+}
+.input .inp{
+    margin-bottom: 25px;
+    width: 80%;
+    height: 50px;
+    border-radius: 25px 25px 0px 0px;
+    border:none;
+}
+
+.input h1{
+    font-family: monospace;
+    color:white;
+}
+.send{
+    color:white;
+     border:none;
+     border-radius: 25px 25px 25px 25px;
+    background-color: darkgreen;
+    width:200px;
+    height:100px;
+        transition: all 0.1s;
+}
+.send:hover{
+    cursor: pointer;
+}
+.send:active{
+    margin-top: 5px;
+     width:190px;
+    height:90px;
+    transition: all 0.1s;
+        
+}
+.message{
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 34px 0px 34px;
+    color:darkred;
+}
+.link{
+    color:purple;
+    font-size:23px;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+.container{
+    width:100%;
+}
+.glavText{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+.containerCenter{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    width:100%;
+    min-width:900px;
+    margin-bottom:100px;
+}
+.title{
+    font-family: sans-serif;
+    text-align:justify-all;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.tablichka{
+    width: 900px;
+    min-height: 900px;
+    background-color: white;
+    border-radius: 100px 100px 50px 50px;
+    flex-direction: column;
+    display: flex;
+    min-width:900px;
+    
+     
+}
+
+.zadanie_title{
+font-size: 30px;
+    font-family:monospace;
+    font-weight:300;
+ width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 'Gasoek One', sans-serif;
+    margin-top: 50px;
+    word-wrap: break-word;
+    color:white;
+    text-align: center;
+}
+.head_zadanie{
+    width: 100%;
+    background-color:black;
+    border-radius: 90px 90px 0 0;
+}
+.body_zadanie{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.body_zadanie2{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.footer_zadanie{
+    background-color: black;
+    margin-top: auto;
+    border-radius: 0 0 47px 47px;
+}
+.footer_zadanie .send{
+    margin-bottom: 30px;
+}
+.zadanie_text{
+     font-family:"robotto";
+    width: 90%;
+    font-size: 40px;
+    text-align: justify;
+    color:#212121;
+    margin-left: auto;
+    margin-right: auto;
+}
+.download{
+    color: black;
+    font-family: monospace;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 50px;
+    width: 300px;
+    height: 100px;
+    transition:all 0.5s;
+    background-color: goldenrod;
+}
+.inputDownlaod{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    border-radius: 25px;
+     
+}
+.download:hover{
+    transition:all 0.6s;
+    background-color: #a200ff;
+    color:white;
+}
+.setgroup{
+    text-align: center;
+    height: 50px;
+    width:200px;
+    font-size:20px;
+}
+.settitle{
+    height:100px;
+    overflow-y: scroll;
+    font-size:40px;
+    margin: auto auto;
+    margin-top: 20px;
+    width: 700px;
+}
+.setoption{
+    height:250px;
+    overflow-y: scroll;
+    font-size:40px;
+    margin: auto auto;
+    margin-top: 20px;
+    width: 700px;
+}
+.settable{
+   display: flex;
+   flex-direction: column;
+    
+}
+#setsend{
+    margin:auto auto;
+}
+.setfile{
+    margin: auto auto;
+    margin-bottom: 30px;
+    color: white;
+}
+.ocen{
+    margin: auto auto;
+    width: 50px;
+    height:50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* =*=*=*=*=*=* Убираем Стилис сайта  =*=*=*=*=*=* */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Gasoek One', sans-serif;
+}
+
+
+/* =*=*=*=*=*=* Настройка Цветов =*=*=*=*=*=* */
+
+:root{
+    --bg-site: white;
+    --tx-color: #000;
+    --span-tx-color: #a200ff;
+    --bg-but: #00aa41;
+    --bg-hover-but: #000;
+    --bg-shadow: rgba(0, 0, 0, 0.291);
+
+    --bg-scroll-track: #000;
+    --bg-scroll-thumb: #3b3b3b;
+}
+
+
+/* =*=*=*=*=*=* Настройка Сайта  =*=*=*=*=*=* */
+
+html{
+    font-size: 62.5%;
+}
+
+
+span{
+    color: var(--span-tx-color);
+}
+
+/* =*=*=*=*=*=* Style Header =*=*=*=*=*=* */
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-site);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999999;
+    border-bottom: 1px solid #000;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.navmenu a{
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--tx-color);
+    margin-left: 2rem;
+    transition: all .5s;
+}
+
+.navmenu a:hover{
+    color: var(--span-tx-color);
+}
+
+
+.navmenu a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    border-bottom: 2px solid var(--span-tx-color);
+    
+    z-index: -1 ;
+    transition: all .5s;
+}
+
+.navmenu a:hover:after{
+    width: 100%;
+}
+
+
+.navmenu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid var(--span-tx-color);
+    
+    z-index: -1 ;
+    transition: all .5s;
+}
+
+.navmenu a:hover:before{
+    width: 100%;
+}
+
+
+/* =*=*=*=*=*=* Style Section headLeft =*=*=*=*=*=* */
+
+#sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: var(--bg-site);
+    color: var(--tx-color);
+    border-right: 1px solid #000;
+    position: fixed;
+    top: 0;
+    left: -200px; /* Изменено с -200px на -180px */
+    transition: left .3s ;
+    padding-top: 10%; /* Добавлено смещение вверх для меню */
+  }
+
+.menuButton{
+    font-size: 4.5rem;
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    background: var(--bg-site);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.navit a{
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+    color: var(--tx-color);
+    margin: 0 auto;
+    font-size: 3.2rem;
+    transition: all .4s;
+}
+
+.navit a:hover{
+    color: var(--bg-site);
+}
+.navit a:hover{
+    width: 100%;
+    background: #343434;
+}
+.groupstable{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.groups{
+    width: 100%;
+    padding-left: 200px;
+    justify-content: center;
+     margin-bottom: 20px;
+}
+.group{
+    float: left;
+    color:black;
+    font-size: 24px;
+    border-radius: 5px;
+    border:solid 1px;
+    background-color: white;
+    padding:10px 10px 10px 10px;
+    margin-right: 30px;
+    transition: all 0.5s;
+    font-family: fantasy;
+    font-weight: bold;
+}
+.group:hover{
+    color:white;
+    background-color: black;
+    transition: all 0.5s;
+    border:solid 1px darkgreen;
+    
+}
+#groupselected{
+    padding:14px 14px 14px 14px;
+    border:solid 1px green;
+    color:white;
+    background-color: black;
+}
+
+
+
+

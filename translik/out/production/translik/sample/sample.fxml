@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2b2b2b; -fx-background-radius: 24 24 0 0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="drag" prefHeight="113.0" prefWidth="800.0" style="-fx-background-color: darkblue; -fx-background-radius: 24 24 0 0;">
+         <children>
+            <ImageView fx:id="icon" fitHeight="100.0" fitWidth="103.0" layoutX="14.0" layoutY="7.0">
+               <effect>
+                  <BoxBlur height="0.0" width="0.0" />
+               </effect>
+            </ImageView>
+            <Button fx:id="close" layoutX="762.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: darkred;" text="X" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="status" alignment="CENTER" layoutX="200.0" layoutY="33.0" prefHeight="60.0" prefWidth="401.0" text="Загрузка" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="slong" alignment="CENTER" layoutX="655.0" layoutY="10.0" prefHeight="32.0" prefWidth="62.0" text="Translik" textFill="#4400ff" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="svernut" layoutX="725.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="26.0" style="-fx-background-color: darkgreen; -fx-background-radius: 10px;" text="-" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Georgia Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="login" layoutX="228.0" layoutY="268.0" prefHeight="44.0" prefWidth="356.0">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="textLogin" layoutX="142.0" layoutY="274.0" text="Логин" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="textPass" layoutX="135.0" layoutY="346.0" text="Пароль" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="228.0" layoutY="340.0" prefHeight="44.0" prefWidth="356.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="input" layoutX="310.0" layoutY="433.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="160.0" style="-fx-background-color: green;" text="Вход" textFill="WHITE">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
